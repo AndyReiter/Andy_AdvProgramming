@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="WarController">
+   <children>
+      <Label alignment="CENTER" layoutX="178.0" layoutY="24.0" prefHeight="42.0" prefWidth="264.0" text="War Card Game">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+      </Label>
+      <Button fx:id="shuffleCardButton" layoutX="24.0" layoutY="369.0" mnemonicParsing="false" onAction="#shuffleCardButtonPressed" text="Start Game" />
+      <Button fx:id="playCardButton" layoutX="255.0" layoutY="299.0" mnemonicParsing="false" onAction="#playCardButtonPressed" text="Play Card" />
+      <Button fx:id="reshuffleAndReplayButton" layoutX="443.0" layoutY="369.0" mnemonicParsing="false" onAction="#reshuffleAndReplayPressed" text="Reshuffle and Replay" />
+      <Label layoutX="117.0" layoutY="303.0" text="Player 1" textFill="BLUE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="416.0" layoutY="303.0" text="Player 2" textFill="RED">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="gameOutcome" alignment="CENTER" layoutX="222.0" layoutY="66.0" prefHeight="27.0" prefWidth="176.0" />
+      <Label fx:id="p1NumTopLeft" layoutX="101.0" layoutY="75.0" prefHeight="34.0" prefWidth="25.0" />
+      <Label fx:id="p1NumBotRight" layoutX="169.0" layoutY="270.0" prefHeight="34.0" prefWidth="25.0" />
+      <Label fx:id="p2NumTopLeft" layoutX="388.0" layoutY="75.0" prefHeight="34.0" prefWidth="25.0" />
+      <Label fx:id="p2NumBotRight" layoutX="469.0" layoutY="270.0" prefHeight="34.0" prefWidth="25.0" />
+      <ImageView fx:id="p1TopLeftSuit" fitHeight="34.0" fitWidth="32.0" layoutX="98.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="p1MidSuit" fitHeight="34.0" fitWidth="32.0" layoutX="130.0" layoutY="166.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="p1BottomRightSuit" fitHeight="34.0" fitWidth="32.0" layoutX="169.0" layoutY="242.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="p2TopLeftSuit" fitHeight="34.0" fitWidth="32.0" layoutX="385.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="p2MidSuit" fitHeight="34.0" fitWidth="32.0" layoutX="426.0" layoutY="166.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="p2BottomRightSuit" fitHeight="34.0" fitWidth="32.0" layoutX="466.0" layoutY="242.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="handWinner" alignment="CENTER" layoutX="211.0" layoutY="336.0" prefHeight="42.0" prefWidth="176.0" />
+   </children>
+</AnchorPane>
